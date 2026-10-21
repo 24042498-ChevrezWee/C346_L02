@@ -5,7 +5,7 @@ const Welcome = () => {
     return (
         <View style={styles.container}>
             <Text>
-                Welcome to C346 - Mobile App Development
+                These are my modules this semester:
             </Text>
         </View>
     );
