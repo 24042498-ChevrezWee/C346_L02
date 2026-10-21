@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, StatusBar } from 'react-native';
 
-const Welcome = () => {
+const ModuleInfo = () => {
     return (
         <View style={styles.container}>
             <Text>
@@ -18,4 +18,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Welcome;
+export default ModuleInfo;
