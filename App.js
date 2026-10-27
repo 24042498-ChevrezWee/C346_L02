@@ -1,35 +1,14 @@
 import React from 'react';
-import { View, Text, StyleSheet, StatusBar } from 'react-native';
-
-const Welcome = ({ code, name }) => {
+import { View, Text } from 'react-native';
+function Welcome() {
     return (
-            <Text>
-                Welcome to {code} - {name}
-            </Text>
+        <Text>Welcome to C346 - Mobile App Development</Text>
     );
-};
-
-class ModuleInfo extends React.Component {
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text>
-                    These are my modules this semester:
-                </Text>
-
-                <Welcome code="C346" name="Mobile App Development" />
-                <Welcome code="C105" name="Introduction to Programming" />
-                <Welcome code="C337" name="Immersive Technologies" />
-            </View>
-        );
-    }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        paddingTop: StatusBar.currentHeight || 0,
-    },
-});
-
-export default ModuleInfo;
+export default function App() {
+    return (
+        <View>
+            <Welcome />
+        </View>
+    );
+}
